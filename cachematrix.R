@@ -16,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
         ## the '<<-' operator ensures that y is assigned to the x variable
         ## defined in the environment of the makeCacheMatrix-function
         x <<- y
+        inverse <<- NULL
     }
     get <- function() {
         x
